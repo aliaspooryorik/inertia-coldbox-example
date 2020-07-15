@@ -1,31 +1,40 @@
 {
-    "name": "inertia-coldbox",
-    "version": "1.0.0",
-    "description": "An advanced template with all the bells and whistles in script format",
-    "main": "index.js",
-    "directories": {
-        "lib": "lib",
-        "test": "tests"
-    },
-    "scripts": {
-        "dev": "webpack --hide-modules",
-        "watch": "npm run dev -- --watch",
-        "prod": "npm run dev -- -p"
-    },
-    "author": "",
-    "license": "MIT",
-    "dependencies": {
-        "@inertiajs/inertia": "^0.1.3",
-        "@inertiajs/inertia-vue": "^0.1.1",
-        "vue": "^2.6.10"
-    },
-    "devDependencies": {
-        "@babel/plugin-syntax-dynamic-import": "^7.2.0",
-        "@babel/plugin-syntax-jsx": "^7.2.0",
-        "babel-helper-vue-jsx-merge-props": "^2.0.3",
-        "babel-plugin-transform-vue-jsx": "^4.0.1",
-        "coldbox-elixir": "^3.1.1",
-        "vue-loader": "^15.7.0",
-        "vue-template-compiler": "^2.6.10"
-    }
+  "name": "inertia-coldbox",
+  "version": "1.0.0",
+  "description": "An advanced template with all the bells and whistles in script format",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development",
+    "watch": "npx babel --watch resources --out-dir . --presets react-app/prod"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@inertiajs/inertia": "^0.1.9",
+    "@inertiajs/inertia-react": "^0.1.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elpete/inertia-coldbox-example.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/elpete/inertia-coldbox-example/issues"
+  },
+  "homepage": "https://github.com/elpete/inertia-coldbox-example#readme"
 }
