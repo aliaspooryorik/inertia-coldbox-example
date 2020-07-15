@@ -1,5 +1,8 @@
 {
     "web":{
+        "http":{
+            "port":"8500"
+        },
         "rewrites":{
             "enable":"true"
         }

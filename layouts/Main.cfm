@@ -11,10 +11,7 @@
         #renderView()#
     </div>
 
-    <script src="#html.elixirPath( "/js/runtime.js" )#"></script>
-    <script src="#html.elixirPath( "/js/vendor.js" )#"></script>
-    <script src="#html.elixirPath( "/js/app.js" )#"></script>
-    <cfabort />
+    <script src="/includes/js/main.initial.js"></script>
 </body>
 </html>
 </cfoutput>
